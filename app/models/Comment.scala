@@ -3,7 +3,7 @@ package models
 import play.api.libs.json.Json
 
 case class Comment(
-                    id: String,
+                    id: Int,
                     postId: Int,
                     text: String,
                     authorName: String
