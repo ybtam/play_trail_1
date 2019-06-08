@@ -1,8 +1,10 @@
 package repositories
 
+import javax.inject.Singleton
 import models.{Comment, Post}
 
-class DataRepositories {
+@Singleton
+class DataRepository {
   private val posts = Seq(
     Post(1, "This is a blog post"),
     Post(2, "Another blog post with awesome content")
